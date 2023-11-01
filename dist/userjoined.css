@@ -1,0 +1,56 @@
+.user-joined-message,.user-left-message {
+    background-color: #3498db; /* Choose your desired background color */
+    color: #fff; /* Text color */
+    border-radius: 8px;
+    padding: 10px;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    
+margin-top: 10px;
+
+}
+
+.outgoing-message {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 10px;
+    background-color: rgb(154, 252, 164);
+    width: fit-content;
+    padding: 6px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-left: auto;
+    max-width: 70%; /* Limit the maximum width of the message */
+    word-wrap: break-word; /* Wrap long words if they don't fit */
+    text-align: right; /* Right-align the text within the message */
+}
+
+
+
+.incoming-message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    padding: 7px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-right: auto;
+    max-width: 70%; 
+    word-wrap: break-word; 
+    text-align: left;
+}
+#container,#main{
+    background-image: url('../dist/p75Yz0.jpg');
+    background-size: cover;
+    padding: 2px;
+}

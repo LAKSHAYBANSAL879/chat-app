@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="userjoined.css">
+   
+</head>
+<body class="w-full h-full">
+    <div  class="bg-gradient-to-tl from-green-300 to-green-800 w-3/4 m-auto h-fit p-2 mt-5 mb-5 ">
+        <nav class="flex justify-center mt-3 align-middle border-b-stone-950 border-b-4">
+            <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" alt="" class="w-14 mb-3">
+            <h1 id="Welcome-message" class="text-5xl text-black-600 font-bold ml-5">Welcome to my chat app</h1>
+        </nav>
+    <main class="overflow-auto h-[75vh]" id="main">
+        <div id="container" class="overflow-y-auto">
+            <div class="user-joined-message"></div>
+                <div class="outgoing-message"></div>
+              <div class="incoming-message"></div>
+             <div class="user-left-message"></div>
+        </div>
+    </main>
+    <div id="input" class="w-3/4 items-center mt-1 ml-10 md:ml-28">
+        
+        <form id="sent-form" action="" class="flex align-middle  bg-white m-auto mt-2 h-fit p-3 border-4 border-black rounded-2xl">
+            <input type="text" name="sent" id="sent" class="w-5/6 h-full border-none outline-none font-xl font-bold">
+            <label for="imageInput" class="file-input-label ml-10 cursor-pointer">
+                <i class="fa-solid fa-link"></i>
+            </label>
+            <input type="file" id="imageInput" accept="image/*" class="hidden">
+            <button id="submit" type="submit"><i class="fa-solid fa-paper-plane fa-xl ml-5"></i></button>
+          
+ 
+        </form>
+      
+ </div>
+    </div>
+    <script  src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="https://kit.fontawesome.com/8c9b0ad18f.js" crossorigin="anonymous"></script>
+    <script  src="../js/client.js"></script>
+</body>
+</html>
